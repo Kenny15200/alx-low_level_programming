@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  *
  *  main - program that prints the alphabet in lowercase, and then in uppercase,
@@ -9,7 +10,6 @@
 
 
 int main(void)
-
 {
 
 	int lw = 'a';
@@ -23,8 +23,8 @@ int main(void)
 	while (up <= 'Z')
 	{
 
-		putchar(up);
-		up += 1;
+	putchar(up);
+	up += 1;
 
 	}
 
