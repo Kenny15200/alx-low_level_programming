@@ -1,22 +1,16 @@
-/** this is a short description for a program */
+#include <stdio.h>
 
-#include<stdio.h>
+#include <stdlib.h>
 
-#include<stdlib.h>
-
-#include<time.h>
+#include <time.h>
 
 /**
  *
- *  * main - takes unspecificed number of arguments and returns value on
+ * main - Entry point
  *
- *   * Description: longer things about the main function
+ * Return: Always 0 (Success)
  *
- *    * Return: 0
- *
- *     */
-
-
+ */
 
 int main(void)
 
@@ -26,24 +20,15 @@ int main(void)
 
 
 
-			srand(time(0));
+		srand(time(0));
+		n = rand() - RAND_MAX / 2;
+		if (n > 0)
+			printf("%d is positive\n", n);
+		else if (n == 0)
+			printf("%d is zero\n", n);
+		else
+			printf("%d is negative\n", n);
 
-				n = rand() - RAND_MAX / 2;
-
-					if (n > 0)
-
-								printf("%d is positive\n", n);
-
-						if (n == 0)
-
-									printf("%d is zero\n", n);
-
-							if (n < 0)
-
-										printf("%d is negative\n", n);
-
-
-
-								return (0);
+		return (0);
 
 }
