@@ -1,33 +1,20 @@
-/** this is a short description for a program to print plain text/file size */
-
-#include<stdio.h>
+#include <stdio.h>
+#include <ctype.h>
 
 /**
- *
- *  * main - takes unspecificed number of arguments and returns value on
- *
- *   * Description: longer things about the main function
- *
- *    * Return: 0
- *
- *     */
+ *    main - program that prints the alphabet in lowercase, followed by a new line
+ *    You can only use the putchar
+ *    Return: 0
+ */
 
 int main(void)
-
 {
-
-		int al;
-
-
-
-			for (al = 'a'; al <= 'z'; al++)
-
-						putchar(al);
-
-				putchar('\n');
-
-
-
-					return (0);
-
+	int l = 'a';
+	while (l <= 'z')
+	{
+		putchar(l);
+		l += 1;
+	}
+	putchar('\n');
+	return (0);
 }
