@@ -3,7 +3,7 @@
 * main - takes unspecificed number of arguments and returns value on
 * Description: Write a program that prints the lowercase alphabet in reverse
 * followed by a new line
-* Return : 0
+* Return:: 0
 */
 int main(void)
 {
