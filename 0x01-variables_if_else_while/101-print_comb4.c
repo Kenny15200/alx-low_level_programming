@@ -1,53 +1,40 @@
-/** this is a short description for a program to print plain text/file size */
-
-#include<stdio.h>
-
+#include <stdio.h>
 /**
- *
- *  * main - takes unspecificed number of arguments and returns value on
- *
- *   * Description: longer things about the main function
- *
- *    * Return: 0
- *
- *     */
+ * main - program that prints all possible different combinations of 
+ * three digits
+ * Numbers must be separated by ,followed by a space
+ * The two digits must be different
+ * 012, 120, 102, 021, 201, 210 are considered the same combination
+ * Return: 0
+ */
+
 
 int main(void)
-
 {
+	int n1 = 48;
+	int n2, n3;
+	int com = 44;
 
-		char c;
-
-			int i;
-
-				double d;
-
-					float f;
-
-
-
-						printf("Size of a char: %lu", (unsigned long)sizeof(c));
-
-							printf(" byte(s)\n");
-
-								printf("Size of an int: %lu", (unsigned long)sizeof(i));
-
-									printf(" byte(s)\n");
-
-										printf("Size of a long int: %lu", (unsigned long)sizeof(i));
-
-											printf(" byte(s)\n");
-
-												printf("Size of a long long int: %lu", (unsigned long)sizeof(d));
-
-													printf(" byte(s)\n");
-
-														printf("Size of a float: %lu", (unsigned long)sizeof(f));
-
-															printf(" byte(s)\n");
-
-
-
-																return (0);
-
+	while (n1 <= 57)
+	{
+		n3 = n2 + 1;
+		while (n3 <= 57)
+		{
+			{
+				putchar(n1);
+				putchar(n2);
+				putchar(n3);
+				if (n1 != 55 || n2 != 56 || n3 != 57)
+				{
+					putchar(com);
+					putchar(32);
+				}
+				n3 += 1; 
+			}
+			 n2 += 1;
+		}
+		n1 += 1;
+	}
+	putchar('\n');
+	return (0);
 }
