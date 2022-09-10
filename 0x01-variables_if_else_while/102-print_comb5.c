@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - program that prints all possible combinations of two two-digit
  * The numbers should range from 0 to 99
@@ -9,31 +11,24 @@
 
 int main(void)
 
-{
-	int n1 = 48;
-	int a = 0;
-	int b;
-	int com = 44;
+{	
+	int p, q;
 
-	while (a <= 99)
+	for (p = 0; p <= 98; p++)
 	{
-		b = a + 1;
-
-		while (b <= 99)
+		for (q = p + 1; q <= 99; q++)
 		{
-			putchar((a / 10) + n1);
-			putchar((a % 10) + n1);
-			putchar(32);
-			putchar((b / 10) + n1);
-			putchar((b % 10) + n1);
-			if (a != 98 || b != 99)
-			{
-				putchar(com);
-				putchar(32);
-			}
-			b += 1;
+			putchar((p / 10) + '0');
+			putchar((p % 10) + '0');
+			putchar(' ');
+			putchar((q / 10) + '0');
+			putchar((q % 10) + '0');
+
+			if (p == 98 && q == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
-		b += 1;
 	}
 	putchar('\n');
 	return (0);
