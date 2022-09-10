@@ -6,14 +6,11 @@
  */
 int main(void)
 {
-	int al; an;
+	int d;
+	char low;
 
-	for (al = '0'; al <= '9'; al++)
-		putchar(al);
-	for (an = 97; an <= 102; an++)
-		putchar(an);
-	putchar('\n');
-
+	for (d = '0'; d <= '9'; d++)
+		putchar(d);
 
 	return (0);
 }
