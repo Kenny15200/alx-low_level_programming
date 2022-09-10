@@ -1,7 +1,8 @@
 #include<stdio.h>
 /**
 * main - takes unspecificed number of arguments and returns value on
-* Description: longer things about the main function
+* Description: Write a program that prints the lowercase alphabet in reverse
+* followed by a new line
 * Return : 0
 */
 int main(void)
