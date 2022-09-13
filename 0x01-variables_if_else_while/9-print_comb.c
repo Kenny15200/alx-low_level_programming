@@ -1,49 +1,25 @@
-#include<stdio.h>
-
+#include <stdio.h>
 /**
+ * main- Entry point
  *
- *  * main - takes unspecificed number of arguments and returns value on
- *
- *   * Description: longer things about the main function
- *
- *    * Return: 0
- *
- *     */
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
-
 {
+	int x;
 
-		int num;
+	for (x = 48; x < 58; x++) 
+	{
+		putchar(x);
+		if (x < 57)
 
-
-
-			for (num = '0'; num <= '9'; num++)
-
-					{
-
-								if (num >= '0' && num <= '9')
-
-											{
-
-															putchar(num);
-
-																	}
-
-										if (num >= '0' && num < '9')
-
-													{
-
-																	putchar(',');
-
-																				putchar(' ');
-
-																						}
-
-											}
-
-				putchar('\n');
-
-					return (0);
-
+		}
+		
+			putchar(44);
+			putchar(32);{}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
