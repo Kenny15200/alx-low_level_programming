@@ -50,7 +50,7 @@ int main(void)
 
 			fib1_half2 = fib2_half2;
 			fib2_half2 = half2;
-				printf(", ,")
+				printf(", ,");
 
 			fib1_half1 = fib2_half;
 			fib1_half2 = fib2_half2;
