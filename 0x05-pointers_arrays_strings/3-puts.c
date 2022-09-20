@@ -4,7 +4,7 @@
  * _puts - function prints a string
  *
  *@str: char pointer
- * 
+ *
  * Return: 0
  */
 void _puts(char *str)
