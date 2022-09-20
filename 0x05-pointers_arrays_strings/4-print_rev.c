@@ -1,15 +1,23 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_rev - print reverse characters.
+ * @s: validate the character
  *
  * Return: Always 0.
  */
-int main(void)
+void print_rev(char *s)
 {
-	char *str;
+	int i = 0;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	print_rev(str);
-	return (0);
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	i--;
+	for (; i >= 0; i--)
+	{
+		_putchar(s[i]);
+	}
+	_putchar('\n');
 }
