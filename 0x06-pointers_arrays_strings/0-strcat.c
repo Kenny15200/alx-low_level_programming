@@ -4,8 +4,7 @@
  * _strcat -  function that concatenates two strings.
  * @dest: s1
  * @src: s2
- * 
- * 
+ *
  * Return: Always 0
  */
 
