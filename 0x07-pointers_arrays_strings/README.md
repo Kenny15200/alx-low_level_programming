@@ -1,1 +1,1 @@
-Write a function that searches a string for any of a set of bytes.
+Write a function that sets the value of a pointer to a char.
